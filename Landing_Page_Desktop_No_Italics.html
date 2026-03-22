@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "tertiary-fixed": "#b2ebff",
+              "on-error-container": "#93000a",
+              "on-secondary-fixed": "#410008",
+              "on-primary-fixed-variant": "#92001f",
+              "secondary": "#a5393e",
+              "on-primary-fixed": "#410008",
+              "background": "#fcf9f8",
+              "secondary-fixed": "#ffdad9",
+              "outline-variant": "#e5bdbc",
+              "tertiary": "#005364",
+              "on-surface-variant": "#5c403f",
+              "surface": "#fcf9f8",
+              "primary-fixed": "#ffdad9",
+              "error": "#ba1a1a",
+              "tertiary-fixed-dim": "#83d2ea",
+              "on-background": "#1c1b1b",
+              "surface-container-low": "#f6f3f2",
+              "on-surface": "#1c1b1b",
+              "secondary-container": "#fd7b7e",
+              "primary": "#a50b28",
+              "surface-variant": "#e5e2e1",
+              "on-tertiary-fixed-variant": "#004e5e",
+              "inverse-on-surface": "#f3f0ef",
+              "surface-dim": "#dcd9d9",
+              "surface-bright": "#fcf9f8",
+              "on-tertiary-fixed": "#001f27",
+              "primary-container": "#a50b28",
+              "on-primary": "#ffffff",
+              "surface-container-highest": "#e5e2e1",
+              "on-tertiary-container": "#aceaff",
+              "secondary-fixed-dim": "#ffb3b2",
+              "surface-container-lowest": "#ffffff",
+              "surface-tint": "#a50b28",
+              "surface-container-high": "#eae7e7",
+              "inverse-surface": "#313030",
+              "on-secondary-container": "#72121d",
+              "on-primary-container": "#ffd7d5",
+              "surface-container": "#f0eded",
+              "on-error": "#ffffff",
+              "error-container": "#ffdad6",
+              "on-secondary-fixed-variant": "#852129",
+              "tertiary-container": "#006d83",
+              "inverse-primary": "#ffb3b2",
+              "primary-fixed-dim": "#ffb3b2",
+              "outline": "#906f6e"
+            },
+            fontFamily: {
+              "headline": ["Arial", "sans-serif"],
+              "body": ["Arial", "sans-serif"],
+              "label": ["Arial", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Arial', sans-serif; background-color: #fcf9f8; color: #1c1b1b; }
+        .font-newsreader { font-family: 'Arial', sans-serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-[#fcf9f8]/85 backdrop-blur-xl border-none">
+<div class="flex justify-between items-center max-w-7xl mx-auto px-8 h-20">
+<div class="text-2xl font-bold font-headline text-[#1c1b1b]">The Master's Archive</div>
+<div class="hidden md:flex space-x-8 items-center">
+<a class="text-[#a50b28] border-b-2 border-[#a50b28] pb-1 font-semibold font-headline" href="#">Home</a>
+<a class="text-[#1c1b1b] opacity-80 hover:text-[#a50b28] transition-colors duration-300 font-headline" href="#about">About</a>
+<a class="text-[#1c1b1b] opacity-80 hover:text-[#a50b28] transition-colors duration-300 font-headline" href="#services">Services</a>
+<a class="text-[#1c1b1b] opacity-80 hover:text-[#a50b28] transition-colors duration-300 font-headline" href="#portfolio">Portfolio</a>
+<a class="text-[#1c1b1b] opacity-80 hover:text-[#a50b28] transition-colors duration-300 font-headline" href="#contact">Contact</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-sm font-medium hover:opacity-90 transition-all duration-200">Consultation</button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-7 z-10">
+<span class="font-label text-primary-container tracking-widest uppercase text-sm mb-4 block">Kinh nghiệm 30 năm đào tạo chuyên sâu</span>
+<h1 class="font-headline text-6xl md:text-8xl font-bold leading-[1.1] mb-6 text-on-surface">
+                        30 Năm <span class="font-medium">Kinh Nghiệm</span> Trong Lĩnh Vực Du Học Nghề Đức
+                    </h1>
+<p class="font-body text-xl text-on-surface-variant max-w-xl mb-10 leading-relaxed">
+                        Chuyên gia hàng đầu về tư vấn và đào tạo nghề nghiệp chuẩn Đức cho người Việt. Kiến tạo tương lai vững chắc tại Châu Âu.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-sm font-semibold flex items-center gap-3 group">
+                            Đặt Lịch Hẹn Ngay
+                            <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<button class="border border-outline-variant px-8 py-4 rounded-sm font-semibold text-on-surface hover:bg-surface-container-low transition-colors">
+                            Tìm Hiểu Thêm
+                        </button>
+</div>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-highest overflow-hidden rounded-sm relative z-10">
+<img alt="Portrait of an expert in vocational education" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Professional portrait of a mature male expert in vocational education" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6JDq77Pq2U6ti-9eIAVhgPi8054NWZMlnsBISv2DHhSpXtS8bEdZgNz9ybRb5aFXMya5XbAoe2qbyiPHtyRSL5AlxI7XhCmQ2onPMRSdwiR2bt5cRm4yYNAsO6YgWtqqTgZmoD5LCUTW-lT_WZJqa-3OIrLu8BjXwIsX-fbPMsv37myRd2RUU9JxduSEfsNZzW0abO3rlnN-r-soDRv13r8ysZw5O7BdxGSbuwLr80IEpBR02JYnvoluuLxPmnNPRnX0LQVlY5Gg"/>
+</div>
+<!-- Abstract Design Element -->
+<div class="absolute -bottom-12 -left-12 w-64 h-64 bg-primary-container/10 -z-10 rounded-sm"></div>
+<div class="absolute -top-12 -right-12 w-48 h-48 border border-primary-container/20 -z-10 rounded-sm"></div>
+</div>
+</div>
+</section>
+<!-- About Me Section -->
+<section class="py-32 bg-surface-container-low" id="about">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<h2 class="font-headline text-5xl font-bold mb-8">Về Chuyên Gia</h2>
+<div class="space-y-6 font-body text-lg text-on-surface-variant">
+<p>Khởi đầu từ những năm 90 tại trung tâm công nghiệp của Đức, tôi đã dành trọn ba thập kỷ để nghiên cứu và thực hành hệ thống giáo dục nghề nghiệp song hành (Duale Ausbildung) - niềm tự hào của nền kinh tế Đức.</p>
+<p>Sứ mệnh của tôi là mang những tiêu chuẩn khắt khe và giá trị bền vững của giáo dục Đức đến với thế hệ trẻ Việt Nam, giúp các bạn không chỉ có một nghề nghiệp mà là một sự nghiệp trọn đời tại châu Âu.</p>
+</div>
+<div class="mt-16 space-y-8">
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container text-on-primary flex items-center justify-center font-headline font-bold">01</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Chính Trực</h4>
+<p class="font-body text-sm text-on-surface-variant">Thông tin minh bạch, quy trình pháp lý chuẩn xác tuyệt đối theo luật cư trú Đức.</p>
+</div>
+</div>
+<div class="flex items-start gap-6 group">
+<div class="w-12 h-12 flex-shrink-0 bg-primary-container text-on-primary flex items-center justify-center font-headline font-bold">02</div>
+<div>
+<h4 class="font-headline text-xl font-bold mb-2">Chuyên Sâu</h4>
+<p class="font-body text-sm text-on-surface-variant">Thấu hiểu sâu sắc từng ngành nghề từ Cơ khí, Điều dưỡng đến Nhà hàng Khách sạn.</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-headline text-3xl mb-12">Hành Trình Thành Tựu</h3>
+<div class="relative border-l border-outline-variant ml-4 pl-12 space-y-12">
+<div class="relative">
+<div class="absolute -left-[3.25rem] top-1 w-4 h-4 bg-primary rounded-full"></div>
+<span class="font-label text-xs font-bold text-primary tracking-widest uppercase">1994 - 2004</span>
+<h4 class="font-headline text-xl font-bold mt-2">Nghiên Cứu Hệ Thống Song Hành</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Tốt nghiệp và làm việc tại các tập đoàn công nghiệp hàng đầu bang Baden-Württemberg.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[3.25rem] top-1 w-4 h-4 bg-primary rounded-full"></div>
+<span class="font-label text-xs font-bold text-primary tracking-widest uppercase">2005 - 2015</span>
+<h4 class="font-headline text-xl font-bold mt-2">Xây Dựng Cầu Nối Văn Hóa</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Cố vấn cho các chương trình hợp tác lao động quốc tế Việt - Đức.</p>
+</div>
+<div class="relative">
+<div class="absolute -left-[3.25rem] top-1 w-4 h-4 bg-primary rounded-full"></div>
+<span class="font-label text-xs font-bold text-primary tracking-widest uppercase">2016 - Hiện Tại</span>
+<h4 class="font-headline text-xl font-bold mt-2">Kỷ Nguyên Master's Archive</h4>
+<p class="font-body text-sm text-on-surface-variant mt-2">Đã hỗ trợ hơn 500 sinh viên Việt Nam thành công trong sự nghiệp tại Đức.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section (Bento Grid) -->
+<section class="py-32 bg-surface" id="services">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div class="max-w-2xl">
+<h2 class="font-headline text-5xl font-bold mb-6">Dịch Vụ Đặc Quyền</h2>
+<p class="font-body text-lg text-on-surface-variant">Chúng tôi không chỉ tư vấn, chúng tôi đồng hành. Mọi dịch vụ được thiết kế để đảm bảo sự chuyển giao suôn sẻ nhất sang môi trường Đức.</p>
+</div>
+<a class="font-headline text-xl text-primary underline underline-offset-8 decoration-2 decoration-primary-container" href="#">Xem chi tiết dịch vụ</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-8 bg-surface-container-low p-12 rounded-sm group hover:bg-primary-container transition-colors duration-500">
+<span class="material-symbols-outlined text-4xl text-primary group-hover:text-on-primary mb-8" data-icon="psychology">psychology</span>
+<h3 class="font-headline text-3xl font-bold mb-4 group-hover:text-on-primary">Tư Vấn Hướng Nghiệp Chuyên Sâu</h3>
+<p class="font-body text-on-surface-variant group-hover:text-on-primary/80 max-w-lg">Phân tích năng lực cá nhân dựa trên tiêu chuẩn năng lực Đức để tìm ra ngành nghề phù hợp nhất với tương lai của bạn.</p>
+</div>
+<div class="md:col-span-4 bg-surface-container-highest p-10 rounded-sm">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" data-icon="description">description</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Hỗ Trợ Thủ Tục Visa &amp; Pháp Lý</h3>
+<p class="font-body text-sm text-on-surface-variant">Đảm bảo hồ sơ chuẩn chỉnh, tối ưu tỷ lệ đậu Visa và hỗ trợ các thủ tục cư trú tại Đức.</p>
+</div>
+<div class="md:col-span-4 border border-outline-variant p-10 rounded-sm hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" data-icon="translate">translate</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Đào Tạo Ngôn Ngữ &amp; Văn Hóa</h3>
+<p class="font-body text-sm text-on-surface-variant">Không chỉ học tiếng, bạn còn được trang bị tư duy và phong cách làm việc của người Đức.</p>
+</div>
+<div class="md:col-span-8 bg-surface-container p-12 rounded-sm flex flex-col md:flex-row gap-12 items-center">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-primary mb-8" data-icon="handshake">handshake</span>
+<h3 class="font-headline text-3xl font-bold mb-4">Kết Nối Doanh Nghiệp Tại Đức</h3>
+<p class="font-body text-on-surface-variant">Mạng lưới đối tác rộng lớn gồm các trường nghề và doanh nghiệp uy tín hàng đầu tại các bang lớn.</p>
+</div>
+<div class="w-full md:w-48 aspect-square bg-surface-variant rounded-sm overflow-hidden grayscale">
+<img alt="German Architecture" class="w-full h-full object-cover" data-alt="Modern German business district architectural facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYXwoe50pAKuWD8FY-gy2Ooo4nDc-GtF5FVtN9wYRula2zLe5NXnZtKc-9eyV6niz54VQoBqCtboIlObDvRS4Voinulw2NNS3ps_627PSJj-wcewF3ctlUtLavfTQn6h3JKkEdfGkvaO5YR3-91NtCs7kAfCXzN8C1_AXasQITOpTX1R8QphwuxLBGpFqkRUMUW3TIY0SvA4G7rLsbmKnbSruMu02l3H3xtYzyGecCzc3RY1GSjgvOP8lK6dymSTBW4QeJDsTCk9k"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portfolio Section -->
+<section class="py-32 bg-surface-container-low overflow-hidden" id="portfolio">
+<div class="max-w-7xl mx-auto px-8">
+<h2 class="font-headline text-5xl font-bold mb-16 text-center">Mạng Lưới Đối Tác &amp; Thành Công</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 opacity-60">
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="font-headline text-2xl font-bold opacity-30">BERLIN CARE</span>
+</div>
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="font-headline text-2xl font-bold opacity-30">HAMBURG TECH</span>
+</div>
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="font-headline text-2xl font-bold opacity-30">MUNICH HOSPITALITY</span>
+</div>
+<div class="h-20 flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+<span class="font-headline text-2xl font-bold opacity-30">STUTTGART MECH</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-variant overflow-hidden mb-6 rounded-sm">
+<img alt="Success Story 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Happy young professionals collaborating in a modern German office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQNDoYh5aU0MoysRqnT5e9HqvzrhiM2uQAN1lD-l3I7Cn7wqO_ap_dXuetNECkTJEbqcrSZx5EmVD17ySyDzb6p_2a4eIk8a4l2JKHsDUVbKUdBRUTp_gEfOmnwGL_WqkVbC2tkdKETlqr6p-gzn5pFu2O2nhDWSR4KQ2GFuY3q52uZHm6z9xDJBidVS7ZJXu798sEVBgFIfC0qDDS3JeeNtKELfcqOaQQ_YAxYtKAM0zj60zFsTGljZN_RQqBiz6pbPo35aJmT44"/>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Nguyễn Minh Anh</h4>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-wider mb-4">Điều dưỡng tại Berlin</p>
+<p class="font-body text-on-surface-variant">"Sự tư vấn tận tâm của thầy đã giúp em có một khởi đầu vững chắc tại thủ đô Berlin."</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-variant overflow-hidden mb-6 rounded-sm">
+<img alt="Success Story 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Technical professional working with industrial machinery in Germany" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzLrcZbUCt8Z75PuIyJ6K51uFLPk0OPunILae1BNIohvgyWC9ketp8fwaBKqlhf8ATZDLr0mC0iC5qIMfIng2uQ2DjE8ud5T8rUbzN_5kNfQagxoI8hZEBmKJtZFZ4BkwpGYQoBcorHj9ygtRoIS4vuJJjUI6CJsE3O6oZYk9RW26aszQ_kx-gJf0d8c72KRE8Nr5dBHv36L-5IcCwDrjAL22qzSldQRPHjJ3Sh0iM_3OxqVsXJRa8W8yu6sVX2VQCtOjaA_O0IDo"/>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Trần Hoàng Nam</h4>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-wider mb-4">Kỹ thuật viên tại Stuttgart</p>
+<p class="font-body text-on-surface-variant">"Quy trình chuyên nghiệp và sự hiểu biết về ngành cơ khí của thầy là chìa khóa thành công của em."</p>
+</div>
+<div class="group cursor-pointer">
+<div class="aspect-video bg-surface-variant overflow-hidden mb-6 rounded-sm">
+<img alt="Success Story 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Group of diverse students celebrating their graduation in Europe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ76EKuvPPKV6xcICBUigL5kHEb88i0bGY-aeLifHkaG6HdbnwR5LOg4Uo2V6utrAEN2ZH_yWTf8nYeVCeIKOEqqs91uh0F5esquOmPWOrq6MWYwAqEpyxGLEcuEuDyEO16Ot2r4DOtofWkEBWzd0Ctww3EEGeLbS9xK0W4O1loZX_SQ5fjAcd226NwtX73u06j7WOfyAgiQ1ECC4YB0GdcnOd260v4M9qlSrz095A8Bcfw1ze9r3ygMl0ETHWe262cEIEqQt_WNU"/>
+</div>
+<h4 class="font-headline text-2xl font-bold mb-2">Lê Thùy Dương</h4>
+<p class="font-body text-sm text-on-surface-variant uppercase tracking-wider mb-4">Quản trị Khách sạn tại Munich</p>
+<p class="font-body text-on-surface-variant">"Em cảm ơn thầy vì đã trang bị cho em không chỉ kiến thức mà cả bản lĩnh văn hóa."</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24">
+<div>
+<h2 class="font-headline text-5xl font-bold mb-8">Kết Nối Với Chúng Tôi</h2>
+<p class="font-body text-lg text-on-surface-variant mb-12">Chúng tôi luôn sẵn sàng lắng nghe và giải đáp mọi thắc mắc về con đường sự nghiệp của bạn tại Đức.</p>
+<div class="space-y-8">
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center rounded-sm">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Email</p>
+<p class="font-body font-semibold">contact@themastersarchive.vn</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center rounded-sm">
+<span class="material-symbols-outlined text-primary" data-icon="call">call</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Hotline</p>
+<p class="font-body font-semibold">+84 24 1234 5678</p>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="w-12 h-12 bg-surface-container-high flex items-center justify-center rounded-sm">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+</div>
+<div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant">Địa chỉ</p>
+<p class="font-body font-semibold">Tầng 12, Tòa nhà Mastery, Quận 1, TP. HCM</p>
+</div>
+</div>
+</div>
+<div class="mt-16 grayscale opacity-80 h-64 rounded-sm overflow-hidden border border-outline-variant">
+<img alt="Location Map" class="w-full h-full object-cover" data-alt="Abstract map visualization of Ho Chi Minh City city center" data-location="Ho Chi Minh City" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7W4XRLrgn5lOwTbhw8doQB9Ps-fRimFfPOJJlGZQIdLqC8SuXWxfhfcUuPvctrSbujGM12jWZ7I_ALhHMXMpS7dVH-iXlTzJ_xSkIt5aDn1ayX-y5hrV9YAomMMms6pAKgbUKAr6vXbCt2CUbkEAwCetYl4bIJsBfXSnITOgDJC1YmmwOgn3G3sJgVGAgEjCvKIhgoLbP-PcetE7zCSrKPK743UAv58u5QppLRCakXYqtqAnOQLoadPbULhRMy_u0pcZ-jR4WJZQ"/>
+</div>
+</div>
+<div class="bg-surface-container-low p-12 rounded-sm border border-outline-variant/30">
+<form class="space-y-6">
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Họ và Tên</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 font-body" placeholder="Nhập họ và tên của bạn" type="text"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Email Cá Nhân</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 font-body" placeholder="example@gmail.com" type="email"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Số Điện Thoại</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 font-body" placeholder="+84 000 000 000" type="tel"/>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Nhu Cầu Tư Vấn</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 font-body">
+<option>Du học nghề Điều dưỡng</option>
+<option>Du học nghề Cơ khí - Kỹ thuật</option>
+<option>Du học nghề Nhà hàng - Khách sạn</option>
+<option>Khác</option>
+</select>
+</div>
+<div>
+<label class="block font-label text-xs uppercase tracking-widest text-on-surface-variant mb-2">Lời Nhắn</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:ring-0 focus:border-primary px-0 py-3 font-body" placeholder="Hãy để lại lời nhắn cho chúng tôi..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-sm font-semibold hover:bg-primary/90 transition-all mt-8" type="submit">Gửi Thông Tin Ngay</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] border-t border-[#e5e2e1]">
+<div class="flex flex-col md:flex-row justify-between items-center py-12 px-8 max-w-7xl mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold font-headline text-[#1c1b1b]">The Master’s Archive</div>
+<p class="font-label text-xs uppercase tracking-widest text-on-surface-variant mt-2 opacity-60">© 2024 The Master’s Archive. German Vocational Excellence.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1b1b]/60 hover:text-[#a50b28] transition-opacity" href="#">Imprint</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1b1b]/60 hover:text-[#a50b28] transition-opacity" href="#">Privacy Policy</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1b1b]/60 hover:text-[#a50b28] transition-opacity" href="#">Terms of Service</a>
+<a class="font-label text-sm uppercase tracking-widest text-[#1c1b1b]/60 hover:text-[#a50b28] transition-opacity" href="#">Disclaimer</a>
+</div>
+</div>
+</footer>
+</body></html>
